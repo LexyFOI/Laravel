@@ -23,8 +23,11 @@ class ScheduleManagementTest extends TestCase
             'capacity'=>10,
         ]);
 
-        $response->assertOk();
+        $event = Event::first();
+
+       // $response->assertOk();
         $this->assertCount(1,Event::all());
+        $response->assertRedirect('/events/'.$event->id);
     }
 
     /** @test */
@@ -111,7 +114,7 @@ class ScheduleManagementTest extends TestCase
         ]);
 
         $event = Event::first();
-        $response = $this->patch('/events/'.$event->id,[
+        $response = $this->patch($event->path(),[
             'group'=>'košarka',
             'startTime'=>'10:00',
             'endTime'=>'11:00',
@@ -124,6 +127,27 @@ class ScheduleManagementTest extends TestCase
         $this->assertEquals('11:00', Event::first()->endTime);
         $this->assertEquals('2. gimnazija', Event::first()->location);
         $this->assertEquals('15', Event::first()->capacity);
+    }
+
+    /** @test */
+    public function an_event_can_be_deleted()
+    {
+        $this->withoutExceptionHandling();
+
+        $this->post('/events', [
+            'group'=>'badminton',
+            'startTime'=>'08:00',
+            'endTime'=>'09:00',
+            'location'=>'TTS',
+            'capacity'=>10,
+        ]);
+
+        $event = Event::first();
+
+        $response = $this->delete($event->path());
+
+        $this->assertCount(0,Event::all());
+        $response->assertRedirect('/events');
 
     }
 }

@@ -16,8 +16,8 @@ class GroupManagementTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->post('/groups',[
-            'mark'=>'B1',
-            'name'=>'badminton',
+            'mark_id'=>'B1',
+            'name'=>'B1_badminton',
             'points'=>1,
         ]);
 

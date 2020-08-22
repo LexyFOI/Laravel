@@ -10,7 +10,7 @@ class GroupsController extends Controller
     public function store()
     {
         $data = request()->validate([
-            'mark'=> 'required',
+            'mark_id'=> 'required',
             'name'=>'required',
             'points'=>'required',
         ]);

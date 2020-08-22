@@ -15,3 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/events', 'EventsController@store');
 Route::patch('/events/{event}', 'EventsController@update');
+Route::delete('/events/{event}', 'EventsController@destroy');
+
+Route::post('/groups', 'GroupsController@store');

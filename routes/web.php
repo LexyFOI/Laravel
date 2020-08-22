@@ -18,3 +18,7 @@ Route::patch('/events/{event}', 'EventsController@update');
 Route::delete('/events/{event}', 'EventsController@destroy');
 
 Route::post('/groups', 'GroupsController@store');
+
+Route::post('/excuses', 'ExcusesController@store');
+Route::patch('/excuses/{excuse}', 'ExcusesController@update');
+Route::delete('/excuses/{excuse}', 'ExcusesController@destroy');

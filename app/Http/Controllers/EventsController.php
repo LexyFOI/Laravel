@@ -9,11 +9,22 @@ class EventsController extends Controller
 {
     public function store()
     {
-        Event::create($this->validateRequest());
+        $event = Event::create($this->validateRequest());
+
+        return redirect($event->path());
     }
 
     public function update(Event $event){
         $event->update($this->validateRequest());
+
+        return redirect($event->path());
+    }
+
+    public function destroy(Event $event)
+    {
+        $event->delete();
+
+        return redirect('/events');
     }
 
     public function validateRequest()

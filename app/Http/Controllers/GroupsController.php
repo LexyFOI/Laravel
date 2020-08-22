@@ -17,5 +17,24 @@ class GroupsController extends Controller
         Group::create($data);
     }
 
+    public function update(Group $group)
+    {
+        $data = request()->validate([
+            'mark_id'=> 'required',
+            'name'=>'required',
+            'points'=>'required',
+        ]);
+
+        $group->update($data);
+
+        return redirect($group->path());
+    }
+
+    public function destroy(Group $group)
+    {
+        $group->delete();
+
+        return redirect('/groups');
+    }
 
 }

@@ -10,6 +10,7 @@ use Tests\TestCase;
 class GroupManagementTest extends TestCase
 {
     use RefreshDatabase;
+
     /** @test */
     public function a_group_can_be_created()
     {
@@ -18,9 +19,51 @@ class GroupManagementTest extends TestCase
         $this->post('/groups',[
             'mark_id'=>'B1',
             'name'=>'B1_badminton',
-            'points'=>1,
+            'points'=>0,
         ]);
 
         $this->assertCount(1,Group::all());
+    }
+
+    /** @test */
+    public function a_group_can_be_updated()
+    {
+        $this->withoutExceptionHandling();
+
+        $this->post('/groups', [
+            'mark_id'=>'B1',
+            'name'=>'B1_badminton',
+            'points'=>0,
+        ]);
+
+        $group = Group::first();
+        $response = $this->patch('/groups/'.$group->id,[
+            'mark_id'=>'B2',
+            'name'=>'B2_badminton',
+            'points'=>1,
+        ]);
+
+        $this->assertEquals('B2', Group::first()->mark_id);
+        $this->assertEquals('B2_badminton', Group::first()->name);
+        $this->assertEquals(1, Group::first()->points);
+    }
+
+    /** @test */
+    public function a_group_can_be_deleted()
+    {
+        $this->withoutExceptionHandling();
+
+        $this->post('/groups', [
+            'mark_id'=>'B2',
+            'name'=>'B2_badminton',
+            'points'=>1,
+        ]);
+
+        $group = Group::first();
+
+        $response = $this->delete($group->path());
+
+        $this->assertCount(0, Group::all());
+        $response->assertRedirect('/groups');
     }
 }

@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b28ec3de-8ed6-488a-a509-d5af90ea239b" name="Default Changelist" comment="testovi za grupe">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Group.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/GroupsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_08_21_193328_create_groups_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Feature/GroupManagementTest.php" afterDir="false" />
+    <list default="true" id="b28ec3de-8ed6-488a-a509-d5af90ea239b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ScheduleManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ScheduleManagementTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +19,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Feature/ScheduleManagementTest.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="2176">
@@ -39,6 +33,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -366,7 +365,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598016823753</updated>
-      <workItem from="1598016825651" duration="18665000" />
+      <workItem from="1598016825651" duration="18959000" />
     </task>
     <task id="LOCAL-00001" summary="dodana funkcija path() u događaje(Event)">
       <created>1598097423060</created>
@@ -389,7 +388,28 @@
       <option name="project" value="LOCAL" />
       <updated>1598098010161</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="dodano preusmjeravanje prilikom kreiranja, ažuriranja i brisanja">
+      <created>1598098185025</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598098185025</updated>
+    </task>
+    <task id="LOCAL-00005" summary="testovi za grupe">
+      <created>1598098210288</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1598098210288</updated>
+    </task>
+    <task id="LOCAL-00006" summary="..">
+      <created>1598098249190</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1598098249190</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -425,11 +445,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18665000" />
+    <option name="totallyTimeSpent" value="18959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" sideWeight="0.5008157" side_tool="true" weight="0.24945295" />
       <window_info id="Favorites" sideWeight="0.5008157" side_tool="true" visible="true" weight="0.24945295" />
@@ -437,9 +456,9 @@
       <window_info id="Structure" order="1" sideWeight="0.5008157" side_tool="true" weight="0.24945295" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
-      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.32932165" />
+      <window_info anchor="bottom" id="Version Control" weight="0.32932165" />
       <window_info anchor="bottom" id="Messages" weight="0.32932165" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32932165" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32932165" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
@@ -507,10 +526,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dodana funkcija path() u događaje(Event)" />
-    <MESSAGE value="testovi za grupe" />
     <MESSAGE value="dodana ruta &quot;post&quot; za grupe" />
     <MESSAGE value="dodano preusmjeravanje nakon izvršavanja funkcija &quot;create&quot;, &quot;update&quot; i &quot;destroy&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodano preusmjeravanje nakon izvršavanja funkcija &quot;create&quot;, &quot;update&quot; i &quot;destroy&quot;" />
+    <MESSAGE value="dodano preusmjeravanje prilikom kreiranja, ažuriranja i brisanja" />
+    <MESSAGE value="testovi za grupe" />
+    <MESSAGE value=".." />
+    <option name="LAST_COMMIT_MESSAGE" value=".." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/phpunit.xml">
@@ -612,6 +633,9 @@
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>

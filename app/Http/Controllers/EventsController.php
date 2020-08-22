@@ -34,7 +34,6 @@ class EventsController extends Controller
             'startTime' => 'required',
             'endTime' => 'required',
             'location' => 'required',
-            'capacity' => 'required',
         ]);
     }
 }

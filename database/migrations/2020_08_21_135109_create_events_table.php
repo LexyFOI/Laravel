@@ -19,7 +19,6 @@ class CreateEventsTable extends Migration
             $table->time('startTime');
             $table->time('endTime');
             $table->string('location');
-            $table->smallInteger('capacity');
             $table->timestamps();
         });
     }

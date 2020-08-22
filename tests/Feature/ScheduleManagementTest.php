@@ -20,7 +20,6 @@ class ScheduleManagementTest extends TestCase
             'startTime'=>'08:00',
             'endTime'=>'09:00',
             'location'=>'TTS',
-            'capacity'=>10,
         ]);
 
         $event = Event::first();
@@ -38,7 +37,6 @@ class ScheduleManagementTest extends TestCase
             'startTime'=>'08:00',
             'endTime'=>'09:00',
             'location'=>'TTS',
-            'capacity'=>10,
         ]);
 
         $response->assertSessionHasErrors('group');
@@ -52,7 +50,6 @@ class ScheduleManagementTest extends TestCase
             'startTime'=>'',
             'endTime'=>'09:00',
             'location'=>'TTS',
-            'capacity'=>10,
         ]);
 
         $response->assertSessionHasErrors('startTime');
@@ -66,7 +63,6 @@ class ScheduleManagementTest extends TestCase
             'startTime'=>'08:00',
             'endTime'=>'',
             'location'=>'TTS',
-            'capacity'=>10,
         ]);
 
         $response->assertSessionHasErrors('endTime');
@@ -80,24 +76,9 @@ class ScheduleManagementTest extends TestCase
             'startTime'=>'08:00',
             'endTime'=>'09:00',
             'location'=>'',
-            'capacity'=>10,
         ]);
 
         $response->assertSessionHasErrors('location');
-    }
-
-    /** @test */
-    public function a_capacity_is_required()
-    {
-        $response = $this->post('/events', [
-            'group'=>'badminton',
-            'startTime'=>'08:00',
-            'endTime'=>'09:00',
-            'location'=>'TTS',
-            'capacity'=>'',
-        ]);
-
-        $response->assertSessionHasErrors('capacity');
     }
 
     /** @test */
@@ -110,7 +91,6 @@ class ScheduleManagementTest extends TestCase
             'startTime'=>'08:00',
             'endTime'=>'09:00',
             'location'=>'TTS',
-            'capacity'=>10,
         ]);
 
         $event = Event::first();
@@ -119,14 +99,12 @@ class ScheduleManagementTest extends TestCase
             'startTime'=>'10:00',
             'endTime'=>'11:00',
             'location'=>'2. gimnazija',
-            'capacity'=>15,
         ]);
 
         $this->assertEquals('košarka', Event::first()->group);
         $this->assertEquals('10:00', Event::first()->startTime);
         $this->assertEquals('11:00', Event::first()->endTime);
         $this->assertEquals('2. gimnazija', Event::first()->location);
-        $this->assertEquals('15', Event::first()->capacity);
     }
 
     /** @test */
@@ -139,7 +117,6 @@ class ScheduleManagementTest extends TestCase
             'startTime'=>'08:00',
             'endTime'=>'09:00',
             'location'=>'TTS',
-            'capacity'=>10,
         ]);
 
         $event = Event::first();

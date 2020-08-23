@@ -94,7 +94,7 @@ class ScheduleManagementTest extends TestCase
         ]);
 
         $event = Event::first();
-        $response = $this->patch($event->path(),[
+        $this->patch($event->path(),[
             'group'=>'košarka',
             'startTime'=>'10:00',
             'endTime'=>'11:00',

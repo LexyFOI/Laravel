@@ -24,3 +24,7 @@ Route::delete('/groups/{group}', 'GroupsController@destroy');
 Route::post('/excuses', 'ExcusesController@store');
 Route::patch('/excuses/{excuse}', 'ExcusesController@update');
 Route::delete('/excuses/{excuse}', 'ExcusesController@destroy');
+
+Route::post('/students', 'StudentsController@store');
+Route::patch('/students/{student}', 'StudentsController@update');
+Route::delete('/students/{student}', 'StudentsController@destroy');

@@ -28,3 +28,7 @@ Route::delete('/excuses/{excuse}', 'ExcusesController@destroy');
 Route::post('/students', 'StudentsController@store');
 Route::patch('/students/{student}', 'StudentsController@update');
 Route::delete('/students/{student}', 'StudentsController@destroy');
+
+Route::post('/hours', 'HoursHeldController@store');
+Route::patch('/hours/{hour}', 'HoursHeldController@update');
+Route::delete('/hours/{hour}', 'HoursHeldController@destroy');

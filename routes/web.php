@@ -32,3 +32,7 @@ Route::delete('/students/{student}', 'StudentsController@destroy');
 Route::post('/hours', 'HoursHeldController@store');
 Route::patch('/hours/{hour}', 'HoursHeldController@update');
 Route::delete('/hours/{hour}', 'HoursHeldController@destroy');
+
+Route::post('apologies', 'ApologiesControlller@store');
+Route::patch('apologies/{apology}', 'ApologiesControlller@update');
+Route::delete('apologies/{apology}', 'ApologiesControlller@destroy');

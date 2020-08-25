@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b28ec3de-8ed6-488a-a509-d5af90ea239b" name="Default Changelist" comment="">
+    <list default="true" id="b28ec3de-8ed6-488a-a509-d5af90ea239b" name="Default Changelist" comment="testiranje funkcionalnosti add,update,delete za klasu održanih sati.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ScheduleManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ScheduleManagementTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,48 +15,43 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <pharPath>C:\ProgramData\ComposerSetup\bin\composer.phar</pharPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FavoritesManager">
-    <favorites_list name="TZKevidencija" />
+    <favorites_list name="TZKevidencija">
+      <favorite_root url="file://$PROJECT_DIR$/app/Http/Controllers/GroupsController.php" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tests/Feature/ScheduleManagementTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="652">
-                  <caret line="126" column="45" lean-forward="true" selection-start-line="126" selection-start-column="45" selection-end-line="126" selection-end-column="45" />
-                  <folding>
-                    <element signature="e#33#47#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/Event.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="242">
-                  <caret line="11" column="5" selection-start-line="10" selection-start-column="3" selection-end-line="13" selection-end-column="5" />
+                <state relative-caret-position="286">
+                  <caret line="13" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_21_135109_create_events_table.php">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventsController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="21" selection-start-line="21" selection-end-line="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GroupsController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="693">
-                  <caret line="37" column="5" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
+                <state relative-caret-position="530">
+                  <caret line="28" selection-start-line="28" selection-end-line="28" />
                   <folding>
                     <element signature="e#40#54#0#PHP" expanded="true" />
                   </folding>
@@ -66,10 +60,28 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/Feature/GroupManagementTest.php">
+            <entry file="file://$PROJECT_DIR$/routes/web.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1252">
-                  <caret line="63" selection-start-line="63" selection-end-line="63" />
+                <state relative-caret-position="508">
+                  <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_21_193328_create_groups_table.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="352">
+                  <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tests/Feature/ScheduleManagementTest.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-2143">
+                  <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
                   <folding>
                     <element signature="e#33#47#0#PHP" expanded="true" />
                   </folding>
@@ -77,29 +89,14 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Group.php">
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tests/Feature/ExcuseManagementTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="8" column="28" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/web.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="464">
-                  <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tests/Feature/StudentManagementTest.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="638">
-                  <caret line="35" selection-start-line="35" selection-end-line="35" />
+                <state relative-caret-position="530">
+                  <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#33#48#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -109,28 +106,31 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tests/Feature/StudentManagementTest.php">
+            <entry file="file://$PROJECT_DIR$/tests/Feature/ApologyManagementTest.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1672">
-                  <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
+                <state relative-caret-position="1254">
+                  <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
+                  <folding>
+                    <element signature="e#33#49#0#PHP" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Student.php">
+            <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_23_231139_create_apologies_table.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="264">
-                  <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+                <state relative-caret-position="418">
+                  <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentsController.php">
+            <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApologiesControlller.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-218">
-                  <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+                <state relative-caret-position="444">
+                  <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
                   <folding>
                     <element signature="e#40#56#0#PHP" expanded="true" />
                   </folding>
@@ -139,10 +139,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_23_113301_create_students_table.php">
+            <entry file="file://$PROJECT_DIR$/app/Apology.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="506">
-                  <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+                <state relative-caret-position="264">
+                  <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -150,6 +150,11 @@
         </leaf>
       </split-second>
     </splitter>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ApologiesController</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -163,7 +168,6 @@
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/phpunit.xml" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_21_193328_create_groups_table.php" />
-        <option value="$PROJECT_DIR$/app/Event.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_21_135109_create_events_table.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/EventsController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ReleaseManagementTest.php" />
@@ -179,9 +183,18 @@
         <option value="$PROJECT_DIR$/database/migrations/2020_08_23_113301_create_students_table.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ScheduleManagementTest.php" />
         <option value="$PROJECT_DIR$/app/Student.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/StudentsController.php" />
         <option value="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" />
+        <option value="$PROJECT_DIR$/app/Event.php" />
+        <option value="$PROJECT_DIR$/app/HourHeld.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_08_23_182305_create_hour_helds_table.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/HoursHeldManagementTest.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HoursHeldController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2020_08_23_231139_create_apologies_table.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/ApologiesControlller.php" />
+        <option value="$PROJECT_DIR$/app/Apology.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/ApologyManagementTest.php" />
       </list>
     </option>
   </component>
@@ -380,21 +393,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.tests">
-    <configuration name="ScheduleManagementTest.an_event_can_be_added" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\ScheduleManagementTest" file="$PROJECT_DIR$/tests/Feature/ScheduleManagementTest.php" method="an_event_can_be_added" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.ApologyManagementTest.an_apology_can_be_deleted">
+    <configuration name="ApologyManagementTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ApologyManagementTest" file="$PROJECT_DIR$/tests/Feature/ApologyManagementTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="StudentManagementTest.a_student_can_be_created" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\StudentManagementTest" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="a_student_can_be_created" scope="Method" />
+    <configuration name="ApologyManagementTest.an_apology_can_be_created" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ApologyManagementTest" file="$PROJECT_DIR$/tests/Feature/ApologyManagementTest.php" method="an_apology_can_be_created" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="StudentManagementTest.a_student_can_be_deleted" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\StudentManagementTest" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="a_student_can_be_deleted" scope="Method" />
+    <configuration name="ApologyManagementTest.an_apology_can_be_deleted" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ApologyManagementTest" file="$PROJECT_DIR$/tests/Feature/ApologyManagementTest.php" method="an_apology_can_be_deleted" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="StudentManagementTest.a_student_can_be_updated" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Feature\StudentManagementTest" file="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" method="a_student_can_be_updated" scope="Method" />
+    <configuration name="ApologyManagementTest.an_apology_can_be_updated" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\ApologyManagementTest" file="$PROJECT_DIR$/tests/Feature/ApologyManagementTest.php" method="an_apology_can_be_updated" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -407,11 +420,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ApologyManagementTest.an_apology_can_be_deleted" />
+        <item itemvalue="PHPUnit.ApologyManagementTest.an_apology_can_be_updated" />
+        <item itemvalue="PHPUnit.ApologyManagementTest.an_apology_can_be_created" />
+        <item itemvalue="PHPUnit.ApologyManagementTest" />
         <item itemvalue="PHPUnit.tests" />
-        <item itemvalue="PHPUnit.StudentManagementTest.a_student_can_be_updated" />
-        <item itemvalue="PHPUnit.StudentManagementTest.a_student_can_be_created" />
-        <item itemvalue="PHPUnit.ScheduleManagementTest.an_event_can_be_added" />
-        <item itemvalue="PHPUnit.StudentManagementTest.a_student_can_be_deleted" />
       </list>
     </recent_temporary>
   </component>
@@ -428,7 +441,10 @@
       <workItem from="1598016825651" duration="31627000" />
       <workItem from="1598123431816" duration="5373000" />
       <workItem from="1598180421179" duration="5974000" />
-      <workItem from="1598198224666" duration="2687000" />
+      <workItem from="1598198224666" duration="14390000" />
+      <workItem from="1598267362653" duration="6661000" />
+      <workItem from="1598343770411" duration="8083000" />
+      <workItem from="1598377623707" duration="1308000" />
     </task>
     <task id="LOCAL-00001" summary="dodana funkcija path() u događaje(Event)">
       <created>1598097423060</created>
@@ -507,48 +523,63 @@
       <option name="project" value="LOCAL" />
       <updated>1598128216032</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="testiranje funkcionalnosti add,update,delete za klasu studenti.">
+      <created>1598203487222</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1598203487223</updated>
+    </task>
+    <task id="LOCAL-00013" summary="testiranje funkcionalnosti add,update,delete za klasu održanih sati.">
+      <created>1598222949592</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1598222949592</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="StudentManagementTest_a_student_can_be_created - 2020.08.23 at 18h 25m 39s.xml">
-      <configuration name="StudentManagementTest.a_student_can_be_created" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ApologyManagementTest_an_apology_can_be_deleted - 2020.08.25 at 19h 51m 22s.xml">
+      <configuration name="ApologyManagementTest.an_apology_can_be_deleted" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StudentManagementTest_a_student_can_be_created - 2020.08.23 at 18h 25m 55s.xml">
-      <configuration name="StudentManagementTest.a_student_can_be_created" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ApologyManagementTest_an_apology_can_be_deleted - 2020.08.25 at 19h 52m 30s.xml">
+      <configuration name="ApologyManagementTest.an_apology_can_be_deleted" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StudentManagementTest_a_student_can_be_created - 2020.08.23 at 18h 26m 39s.xml">
-      <configuration name="StudentManagementTest.a_student_can_be_created" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ApologyManagementTest_an_apology_can_be_deleted - 2020.08.25 at 19h 53m 24s.xml">
+      <configuration name="ApologyManagementTest.an_apology_can_be_deleted" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StudentManagementTest_a_student_can_be_created - 2020.08.23 at 18h 26m 53s.xml">
-      <configuration name="StudentManagementTest.a_student_can_be_created" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ApologyManagementTest_an_apology_can_be_deleted - 2020.08.25 at 19h 56m 10s.xml">
+      <configuration name="ApologyManagementTest.an_apology_can_be_deleted" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StudentManagementTest_a_student_can_be_created - 2020.08.23 at 18h 26m 58s.xml">
-      <configuration name="StudentManagementTest.a_student_can_be_created" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ApologyManagementTest_an_apology_can_be_deleted - 2020.08.25 at 20h 02m 32s.xml">
+      <configuration name="ApologyManagementTest.an_apology_can_be_deleted" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StudentManagementTest_a_student_can_be_created - 2020.08.23 at 18h 27m 18s.xml">
-      <configuration name="StudentManagementTest.a_student_can_be_created" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ApologyManagementTest_an_apology_can_be_deleted - 2020.08.25 at 20h 04m 07s.xml">
+      <configuration name="ApologyManagementTest.an_apology_can_be_deleted" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StudentManagementTest_a_student_can_be_created - 2020.08.23 at 18h 31m 57s.xml">
-      <configuration name="StudentManagementTest.a_student_can_be_created" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ApologyManagementTest_an_apology_can_be_deleted - 2020.08.25 at 20h 07m 13s.xml">
+      <configuration name="ApologyManagementTest.an_apology_can_be_deleted" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StudentManagementTest_a_student_can_be_created - 2020.08.23 at 18h 32m 36s.xml">
-      <configuration name="StudentManagementTest.a_student_can_be_created" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ApologyManagementTest_an_apology_can_be_deleted - 2020.08.25 at 20h 07m 24s.xml">
+      <configuration name="ApologyManagementTest.an_apology_can_be_deleted" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="StudentManagementTest_a_student_can_be_updated - 2020.08.23 at 18h 35m 36s.xml">
-      <configuration name="StudentManagementTest.a_student_can_be_updated" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ApologyManagementTest_an_apology_can_be_deleted - 2020.08.25 at 20h 07m 40s.xml">
+      <configuration name="ApologyManagementTest.an_apology_can_be_deleted" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2020.08.23 at 18h 37m 24s.xml">
-      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
+    <history-entry file="ApologyManagementTest_an_apology_can_be_deleted - 2020.08.25 at 20h 07m 49s.xml">
+      <configuration name="ApologyManagementTest.an_apology_can_be_deleted" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45661000" />
+    <option name="totallyTimeSpent" value="73416000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.123667374" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.12260128" />
       <window_info id="Structure" order="1" sideWeight="0.5008157" side_tool="true" weight="0.2489339" />
       <window_info id="npm" order="2" sideWeight="0.5008157" side_tool="true" weight="0.2489339" />
       <window_info id="Favorites" order="3" sideWeight="0.502447" side_tool="true" weight="0.2489339" />
@@ -568,17 +599,17 @@
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.123667374" />
-      <window_info id="Structure" order="1" sideWeight="0.5008157" side_tool="true" weight="0.24945295" />
-      <window_info id="npm" order="2" sideWeight="0.5008157" side_tool="true" weight="0.24945295" />
-      <window_info id="Favorites" order="3" sideWeight="0.502447" side_tool="true" weight="0.24945295" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.120469086" />
+      <window_info id="Structure" order="1" sideWeight="0.5008157" side_tool="true" weight="0.2489339" />
+      <window_info id="npm" order="2" sideWeight="0.5008157" side_tool="true" weight="0.2489339" />
+      <window_info id="Favorites" order="3" sideWeight="0.502447" side_tool="true" weight="0.2489339" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32932165" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3261105" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -648,7 +679,9 @@
     <MESSAGE value="ispravak atributa &quot;mark&quot; u &quot;mark_id&quot;" />
     <MESSAGE value="dodana testiranja za upravljanje klasom &quot;oslobođenje od pohađanja predmeta TZK&quot; (eng. Excuse) ... testirane funkcije za kreiranje, ažuriranje i brisanje" />
     <MESSAGE value="dodana testiranja za funkcije ažuriranja i brisanja" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodana testiranja za funkcije ažuriranja i brisanja" />
+    <MESSAGE value="testiranje funkcionalnosti add,update,delete za klasu studenti." />
+    <MESSAGE value="testiranje funkcionalnosti add,update,delete za klasu održanih sati." />
+    <option name="LAST_COMMIT_MESSAGE" value="testiranje funkcionalnosti add,update,delete za klasu održanih sati." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/phpunit.xml">
@@ -685,47 +718,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="27" column="5" selection-start-line="22" selection-start-column="4" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/ExcuseManagementTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="84" column="5" selection-start-line="25" selection-start-column="3" selection-end-line="84" selection-end-column="5" />
-          <folding>
-            <element signature="e#33#48#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_21_193328_create_groups_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="35" lean-forward="true" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Excuse.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ExcusesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="26" selection-start-column="3" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#55#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,24 +732,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Event.php">
+    <entry file="file://$PROJECT_DIR$/tests/Feature/StudentManagementTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="5" selection-start-line="10" selection-start-column="3" selection-end-line="13" selection-end-column="5" />
+        <state relative-caret-position="638">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_21_135109_create_events_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
+        <state relative-caret-position="238">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -766,31 +755,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_23_113301_create_students_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
+        <state relative-caret-position="379">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/HourHeld.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
+        <state relative-caret-position="264">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentsController.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_23_182305_create_hour_helds_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-218">
-          <caret line="20" column="34" lean-forward="true" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="286">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/GroupManagementTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
+        <state relative-caret-position="1151">
           <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="e#33#47#0#PHP" expanded="true" />
@@ -798,10 +784,133 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/HoursHeldManagementTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="951">
+          <caret line="53" column="57" selection-start-line="53" selection-start-column="57" selection-end-line="53" selection-end-column="57" />
+          <folding>
+            <element signature="e#33#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="2742" selection-start-line="2742" selection-end-line="2742" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="630" selection-start-line="630" selection-end-line="630" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpunit/phpunit/src/Framework/Assert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="484" column="27" selection-start-line="484" selection-start-column="27" selection-end-line="484" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="128" selection-start-line="128" selection-end-line="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Support/Traits/EnumeratesValues.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="685" selection-start-line="685" selection-end-line="685" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="538" selection-start-line="538" selection-end-line="538" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10310">
+          <caret line="488" selection-start-line="488" selection-end-line="488" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ExcusesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="31" column="5" selection-start-line="26" selection-start-column="3" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HoursHeldController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#40#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_21_193328_create_groups_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2020_08_23_231139_create_apologies_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GroupsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="37" column="5" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
+        <state relative-caret-position="2">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+          <folding>
+            <element signature="e#40#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
           <folding>
             <element signature="e#40#54#0#PHP" expanded="true" />
           </folding>
@@ -810,18 +919,62 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Feature/ScheduleManagementTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="126" column="45" lean-forward="true" selection-start-line="126" selection-start-column="45" selection-end-line="126" selection-end-column="45" />
+        <state relative-caret-position="-2143">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
             <element signature="e#33#47#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/StudentManagementTest.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/ApologiesControlller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="79" column="4" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="4" />
+        <state relative-caret-position="444">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Event.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/ExcuseManagementTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="530">
+          <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
+          <folding>
+            <element signature="e#33#48#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Apology.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/ApologyManagementTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1254">
+          <caret line="57" column="10" selection-start-line="57" selection-start-column="10" selection-end-line="57" selection-end-column="10" />
+          <folding>
+            <element signature="e#33#49#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

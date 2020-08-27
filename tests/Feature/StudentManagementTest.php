@@ -20,10 +20,11 @@ class StudentManagementTest extends TestCase
             'oib'=>'12365478901',
             'student_name'=>'Aleksandra',
             'student_last_name'=>'Tomić',
+            'email'=>'apolak@foi.hr',
             'year'=>'2',
             'course_id'=>'BPBZ',
             'excuse_id'=>'0',
-            'event_id'=>1,
+            'group_id'=>1,
             'no_excused_weekends'=>0,
             'no_workd_hours'=>0,
             'comment'=>'blabla',
@@ -44,10 +45,11 @@ class StudentManagementTest extends TestCase
             'oib'=>'12365478901',
             'student_name'=>'Aleksandra',
             'student_last_name'=>'Tomić',
+            'email'=>'apolak@foi.hr',
             'year'=>'2',
             'course_id'=>'BPBZ',
             'excuse_id'=>'0',
-            'event_id'=>1,
+            'group_id'=>1,
             'no_excused_weekends'=>0,
             'no_workd_hours'=>0,
             'comment'=>'blabla',
@@ -58,10 +60,11 @@ class StudentManagementTest extends TestCase
                 'oib'=>'21365487902',
                 'student_name'=>'Maja',
                 'student_last_name'=>'Borošić',
+                'email'=>'mborosic@foi.hr',
                 'year'=>'2',
                 'course_id'=>'PITUP',
                 'excuse_id'=>'1',
-                'event_id'=>1,
+                'group_id'=>1,
                 'no_excused_weekends'=>1,
                 'no_workd_hours'=>1,
                 'comment'=>'asd',
@@ -70,10 +73,11 @@ class StudentManagementTest extends TestCase
         $this->assertEquals('21365487902', Student::first()->oib);
         $this->assertEquals('Maja', Student::first()->student_name);
         $this->assertEquals('Borošić', Student::first()->student_last_name);
+        $this->assertEquals('mborosic@foi.hr',Student::first()->email);
         $this->assertEquals('2', Student::first()->year);
         $this->assertEquals('PITUP', Student::first()->course_id);
         $this->assertEquals('1', Student::first()->excuse_id);
-        $this->assertEquals('1', Student::first()->event_id);
+        $this->assertEquals('1', Student::first()->group_id);
         $this->assertEquals('1', Student::first()->no_excused_weekends);
         $this->assertEquals('1', Student::first()->no_workd_hours);
         $this->assertEquals('asd', Student::first()->comment);
@@ -88,10 +92,11 @@ class StudentManagementTest extends TestCase
             'oib'=>'12365478901',
             'student_name'=>'Aleksandra',
             'student_last_name'=>'Tomić',
+            'email'=>'apolak@foi.hr',
             'year'=>'2',
             'course_id'=>'BPBZ',
             'excuse_id'=>'0',
-            'event_id'=>1,
+            'group_id'=>1,
             'no_excused_weekends'=>0,
             'no_workd_hours'=>0,
             'comment'=>'blabla',

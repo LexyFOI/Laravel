@@ -10,8 +10,7 @@ class GroupsController extends Controller
     public function store()
     {
         $data = request()->validate([
-            'mark_id'=> 'required',
-            'name'=>'required',
+            'group_name'=>'required',
             'points'=>'required',
         ]);
         Group::create($data);
@@ -20,8 +19,7 @@ class GroupsController extends Controller
     public function update(Group $group)
     {
         $data = request()->validate([
-            'mark_id'=> 'required',
-            'name'=>'required',
+            'group_name'=>'required',
             'points'=>'required',
         ]);
 

@@ -18,7 +18,7 @@ class GroupManagementTest extends TestCase
 
         $this->post('/groups',[
             'mark_id'=>'B1',
-            'name'=>'B1_badminton',
+            'group_name'=>'B1_badminton',
             'points'=>0,
         ]);
 
@@ -31,31 +31,27 @@ class GroupManagementTest extends TestCase
         $this->withoutExceptionHandling();
 
         $this->post('/groups', [
-            'mark_id'=>'B1',
-            'name'=>'B1_badminton',
+            'group_name'=>'B1_badminton',
             'points'=>0,
         ]);
 
         $group = Group::first();
         $response = $this->patch('/groups/'.$group->id,[
-            'mark_id'=>'B2',
-            'name'=>'B2_badminton',
+            'group_name'=>'B2_badminton',
             'points'=>1,
         ]);
 
-        $this->assertEquals('B2', Group::first()->mark_id);
-        $this->assertEquals('B2_badminton', Group::first()->name);
+        $this->assertEquals('B2_badminton', Group::first()->group_name);
         $this->assertEquals(1, Group::first()->points);
     }
 
     /** @test */
     public function a_group_can_be_deleted()
     {
-        $this->withoutExceptionHandling();
+        //$this->withoutExceptionHandling();
 
         $this->post('/groups', [
-            'mark_id'=>'B2',
-            'name'=>'B2_badminton',
+            'group_name'=>'B2_badminton',
             'points'=>1,
         ]);
 

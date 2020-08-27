@@ -18,10 +18,11 @@ class CreateStudentsTable extends Migration
             $table->bigInteger('oib');
             $table->string('student_name');
             $table->string('student_last_name');
+            $table->string('email');
             $table->integer('year');
             $table->integer('course_id');
             $table->integer('excuse_id');
-            $table->integer('event_id');
+            $table->integer('group_id');
             $table->integer('no_excused_weekends');
             $table->integer('no_workd_hours');
             $table->string('comment');

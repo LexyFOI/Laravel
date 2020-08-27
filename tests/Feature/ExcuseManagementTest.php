@@ -13,47 +13,28 @@ class ExcuseManagementTest extends TestCase
     /** @test */
     public function an_excuse_can_be_added()
     {
-        $this->withoutExceptionHandling();
-
-        $this->post('/excuses',[
-            'excuse_id'=>'C',
-            'description'=>'sportaš',
-        ]);
-
+        $this->post('/excuses', $this->excuseData());
         $this->assertCount(1,Excuse::all());
     }
 
     /** @test */
     public function an_excuse_id_is_required()
     {
-        $response = $this->post('/excuses', [
-            'excuse_id'=>'',
-            'description'=>'sportaš',
-        ]);
-
+        $response = $this->post('/excuses', array_merge($this->excuseData(), ['excuse_id'=>'']));
         $response->assertSessionHasErrors('excuse_id');
     }
 
     /** @test */
     public function a_description_is_required()
     {
-        $response = $this->post('/excuses', [
-            'excuse_id'=>'C',
-            'description'=>'',
-        ]);
-
+        $response = $this->post('/excuses', array_merge($this->excuseData(), ['description'=>'']));
         $response->assertSessionHasErrors('description');
     }
 
     /** @test */
     public function an_excuse_can_be_updated()
     {
-       // $this->withoutExceptionHandling();
-
-        $this->post('/excuses', [
-            'excuse_id'=>'C',
-            'description'=>'sportaš',
-        ]);
+        $this->post('/excuses', $this->excuseData());
 
         $excuse = Excuse::first();
         $response = $this->patch('/excuses/'.$excuse->id,[
@@ -68,12 +49,7 @@ class ExcuseManagementTest extends TestCase
     /** @test */
     public function an_excuse_can_be_deleted()
     {
-        $this->withoutExceptionHandling();
-
-        $this->post('/excuses', [
-            'excuse_id'=>'C',
-            'description'=>'sportaš',
-        ]);
+        $this->post('/excuses', $this->excuseData());
 
         $excuse = Excuse::first();
 
@@ -82,5 +58,16 @@ class ExcuseManagementTest extends TestCase
         $this->assertCount(0,Excuse::all());
         $response->assertRedirect('/excuses');
 
+    }
+
+    /**
+     * @return array
+     */
+    private function excuseData(): array
+    {
+        return [
+            'excuse_id' => 'C',
+            'description' => 'sportaš',
+        ];
     }
 }

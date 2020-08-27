@@ -14,13 +14,7 @@ class GroupManagementTest extends TestCase
     /** @test */
     public function a_group_can_be_created()
     {
-        $this->withoutExceptionHandling();
-
-        $this->post('/groups',[
-            'mark_id'=>'B1',
-            'group_name'=>'B1_badminton',
-            'points'=>0,
-        ]);
+        $this->post('/groups', $this->groupData());
 
         $this->assertCount(1,Group::all());
     }
@@ -28,12 +22,7 @@ class GroupManagementTest extends TestCase
     /** @test */
     public function a_group_can_be_updated()
     {
-        $this->withoutExceptionHandling();
-
-        $this->post('/groups', [
-            'group_name'=>'B1_badminton',
-            'points'=>0,
-        ]);
+        $this->post('/groups', $this->groupData());
 
         $group = Group::first();
         $response = $this->patch('/groups/'.$group->id,[
@@ -48,12 +37,7 @@ class GroupManagementTest extends TestCase
     /** @test */
     public function a_group_can_be_deleted()
     {
-        //$this->withoutExceptionHandling();
-
-        $this->post('/groups', [
-            'group_name'=>'B2_badminton',
-            'points'=>1,
-        ]);
+        $this->post('/groups', $this->groupData());
 
         $group = Group::first();
 
@@ -61,5 +45,16 @@ class GroupManagementTest extends TestCase
 
         $this->assertCount(0, Group::all());
         $response->assertRedirect('/groups');
+    }
+
+    /**
+     * @return array
+     */
+    private function groupData(): array
+    {
+        return [
+            'group_name' => 'B1_badminton',
+            'points' => 0,
+        ];
     }
 }

@@ -15,12 +15,7 @@ class ScheduleManagementTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $response = $this->post('/events', [
-            'group'=>'badminton',
-            'startTime'=>'08:00',
-            'endTime'=>'09:00',
-            'location'=>'TTS',
-        ]);
+        $response = $this->post('/events', $this->scheduleData());
 
         $event = Event::first();
 
@@ -32,12 +27,7 @@ class ScheduleManagementTest extends TestCase
     /** @test */
     public function a_group_is_required()
     {
-        $response = $this->post('/events', [
-            'group'=>'',
-            'startTime'=>'08:00',
-            'endTime'=>'09:00',
-            'location'=>'TTS',
-        ]);
+        $response = $this->post('/events', array_merge($this->scheduleData(), ['group'=> '']));
 
         $response->assertSessionHasErrors('group');
     }
@@ -45,12 +35,7 @@ class ScheduleManagementTest extends TestCase
     /** @test */
     public function startTime_is_required()
     {
-        $response = $this->post('/events', [
-            'group'=>'badminton',
-            'startTime'=>'',
-            'endTime'=>'09:00',
-            'location'=>'TTS',
-        ]);
+        $response = $this->post('/events', array_merge($this->scheduleData(), ['startTime'=>'']));
 
         $response->assertSessionHasErrors('startTime');
     }
@@ -58,12 +43,7 @@ class ScheduleManagementTest extends TestCase
     /** @test */
     public function endTime_is_required()
     {
-        $response = $this->post('/events', [
-            'group'=>'badminton',
-            'startTime'=>'08:00',
-            'endTime'=>'',
-            'location'=>'TTS',
-        ]);
+        $response = $this->post('/events', array_merge($this->scheduleData(), ['endTime'=>'']));
 
         $response->assertSessionHasErrors('endTime');
     }
@@ -71,12 +51,7 @@ class ScheduleManagementTest extends TestCase
     /** @test */
     public function a_location_is_required()
     {
-        $response = $this->post('/events', [
-            'group'=>'badminton',
-            'startTime'=>'08:00',
-            'endTime'=>'09:00',
-            'location'=>'',
-        ]);
+        $response = $this->post('/events', array_merge($this->scheduleData(), ['location'=>'']));
 
         $response->assertSessionHasErrors('location');
     }
@@ -86,12 +61,7 @@ class ScheduleManagementTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $this->post('/events', [
-            'group'=>'badminton',
-            'startTime'=>'08:00',
-            'endTime'=>'09:00',
-            'location'=>'TTS',
-        ]);
+        $this->post('/events', $this->scheduleData());
 
         $event = Event::first();
         $this->patch($event->path(),[
@@ -112,12 +82,7 @@ class ScheduleManagementTest extends TestCase
     {
         $this->withoutExceptionHandling();
 
-        $this->post('/events', [
-            'group'=>'badminton',
-            'startTime'=>'08:00',
-            'endTime'=>'09:00',
-            'location'=>'TTS',
-        ]);
+        $this->post('/events', $this->scheduleData());
 
         $event = Event::first();
 
@@ -126,5 +91,18 @@ class ScheduleManagementTest extends TestCase
         $this->assertCount(0,Event::all());
         $response->assertRedirect('/events');
 
+    }
+
+    /**
+     * @return array
+     */
+    private function scheduleData(): array
+    {
+        return [
+            'group' => 'badminton',
+            'startTime' => '08:00',
+            'endTime' => '09:00',
+            'location' => 'TTS',
+        ];
     }
 }

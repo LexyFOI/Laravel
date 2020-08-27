@@ -14,21 +14,7 @@ class StudentManagementTest extends TestCase
     /** @test */
     public function a_student_can_be_created()
     {
-        //$this->withoutExceptionHandling();
-
-        $response = $this->post('/students',[
-            'oib'=>'12365478901',
-            'student_name'=>'Aleksandra',
-            'student_last_name'=>'Tomić',
-            'email'=>'apolak@foi.hr',
-            'year'=>'2',
-            'course_id'=>'BPBZ',
-            'excuse_id'=>'0',
-            'group_id'=>1,
-            'no_excused_weekends'=>0,
-            'no_workd_hours'=>0,
-            'comment'=>'blabla',
-        ]);
+        $response = $this->post('/students', $this->studentData());
 
         $this->assertCount(1,Student::all());
 
@@ -39,21 +25,7 @@ class StudentManagementTest extends TestCase
     /**  @test */
     public function a_student_can_be_updated()
     {
-        $this->withoutExceptionHandling();
-
-        $this->post('/students',[
-            'oib'=>'12365478901',
-            'student_name'=>'Aleksandra',
-            'student_last_name'=>'Tomić',
-            'email'=>'apolak@foi.hr',
-            'year'=>'2',
-            'course_id'=>'BPBZ',
-            'excuse_id'=>'0',
-            'group_id'=>1,
-            'no_excused_weekends'=>0,
-            'no_workd_hours'=>0,
-            'comment'=>'blabla',
-        ]);
+        $this->post('/students',$this->studentData());
 
         $student = Student::first();
         $this->patch($student->path(),[
@@ -86,21 +58,7 @@ class StudentManagementTest extends TestCase
     /** @test */
     public function a_student_can_be_deleted()
     {
-        $this->withoutExceptionHandling();
-
-        $this->post('/students', [
-            'oib'=>'12365478901',
-            'student_name'=>'Aleksandra',
-            'student_last_name'=>'Tomić',
-            'email'=>'apolak@foi.hr',
-            'year'=>'2',
-            'course_id'=>'BPBZ',
-            'excuse_id'=>'0',
-            'group_id'=>1,
-            'no_excused_weekends'=>0,
-            'no_workd_hours'=>0,
-            'comment'=>'blabla',
-        ]);
+        $this->post('/students', $this->studentData());
 
         $student = Student::first();
 
@@ -109,5 +67,25 @@ class StudentManagementTest extends TestCase
         $this->assertCount(0,Student::all());
         $response->assertRedirect('/students');
 
+    }
+
+    /**
+     * @return array
+     */
+    private function studentData(): array
+    {
+        return [
+            'oib' => '12365478901',
+            'student_name' => 'Aleksandra',
+            'student_last_name' => 'Tomić',
+            'email' => 'apolak@foi.hr',
+            'year' => '2',
+            'course_id' => 'BPBZ',
+            'excuse_id' => '0',
+            'group_id' => 1,
+            'no_excused_weekends' => 0,
+            'no_workd_hours' => 0,
+            'comment' => 'blabla',
+        ];
     }
 }

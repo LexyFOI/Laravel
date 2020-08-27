@@ -14,16 +14,7 @@ class HoursHeldManagementTest extends TestCase
     /** @test */
     public function an_hourheld_can_be_added()
     {
-
-        $this->withoutExceptionHandling();
-
-        $this->post('/hours',[
-            'hs_date'=>'12.08.2020.',
-            'hs_day'=>'srijeda',
-            'group_id'=>1,
-            'student_id'=>1,
-            'points'=>'1,5',
-        ]);
+        $this->post('/hours', $this->hhData());
 
         $this->assertCount(1,HourHeld::all());
     }
@@ -31,15 +22,7 @@ class HoursHeldManagementTest extends TestCase
     /** @test */
     public function an_hourheld_can_be_updated()
     {
-        $this->withoutExceptionHandling();
-
-        $this->post('/hours', [
-            'hs_date'=>'12.08.2020.',
-            'hs_day'=>'srijeda',
-            'group_id'=>1,
-            'student_id'=>1,
-            'points'=>'1.5',
-        ]);
+        $this->post('/hours', $this->hhData());
 
         $hour = HourHeld::first();
         $this->patch($hour->path(),[
@@ -60,15 +43,7 @@ class HoursHeldManagementTest extends TestCase
     /** @test */
     public function an_hour_held_can_be_deleted()
     {
-        $this->withoutExceptionHandling();
-
-        $this->post('/hours', [
-            'hs_date'=>'11.08.2020.',
-            'hs_day'=>'utorak',
-            'group_id'=>2,
-            'student_id'=>2,
-            'points'=>'3.0',
-        ]);
+        $this->post('/hours', $this->hhData());
 
         $hour = HourHeld::first();
 
@@ -76,5 +51,19 @@ class HoursHeldManagementTest extends TestCase
 
         $this->assertCount(0, HourHeld::all());
         $response->assertRedirect('/hours');
+    }
+
+    /**
+     * @return array
+     */
+    private function hhData(): array
+    {
+        return [
+            'hs_date' => '12.08.2020.',
+            'hs_day' => 'srijeda',
+            'group_id' => 1,
+            'student_id' => 1,
+            'points' => '1.5',
+        ];
     }
 }

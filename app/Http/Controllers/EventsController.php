@@ -27,7 +27,7 @@ class EventsController extends Controller
         return redirect('/events');
     }
 
-    public function validateRequest()
+    private function validateRequest()
     {
         return request()->validate([
             'group' => 'required',

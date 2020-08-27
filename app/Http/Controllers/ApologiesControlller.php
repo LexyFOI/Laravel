@@ -9,33 +9,31 @@ class ApologiesControlller extends Controller
 {
     public function store()
     {
-        $data = request()->validate([
-            'student_id'=>'required',
-            'valid_from'=>'required',
-            'valid_to'=>'required',
-            'nof_weeks'=>'required',
-            'comment'=>'required',
-        ]);
-
-        Apology::create($data);
+        Apology::create($this->validateRequest());
     }
 
     public function update(Apology $apology)
     {
-        $data = request()->validate([
-            'student_id'=>'required',
-            'valid_from'=>'required',
-            'valid_to'=>'required',
-            'nof_weeks'=>'required',
-            'comment'=>'required',
-        ]);
-
-        $apology->update($data);
+        $apology->update($this->validateRequest());
     }
 
     public function destroy(Apology $apology)
     {
         $apology->delete();
         return redirect('/apologies');
+    }
+
+    /**
+     * @return array
+     */
+    private function validateRequest(): array
+    {
+        return request()->validate([
+            'student_id' => 'required',
+            'valid_from' => 'required',
+            'valid_to' => 'required',
+            'nof_weeks' => 'required',
+            'comment' => 'required',
+        ]);
     }
 }

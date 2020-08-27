@@ -13,14 +13,7 @@ class ApologyManagementTest extends TestCase
     /** @test */
     public function an_apology_can_be_created()
     {
-        //$this->withoutExceptionHandling();
-        $this->post('/apologies',[
-            'student_id'=>'1',
-            'valid_from'=>'12.08.2020.',
-            'valid_to'=>'12.09.2020.',
-            'nof_weeks'=>'4',
-            'comment'=>'abc',
-        ]);
+        $this->post('/apologies', $this->apologyData());
 
         $this->assertCount(1,Apology::all());
     }
@@ -29,13 +22,7 @@ class ApologyManagementTest extends TestCase
     public function an_apology_can_be_updated()
     {
         $this->withoutExceptionHandling();
-        $this->post('/apologies',[
-            'student_id'=>1,
-            'valid_from'=>'12.08.2020.',
-            'valid_to'=>'12.09.2020.',
-            'nof_weeks'=>'4',
-            'comment'=>'abc',
-        ]);
+        $this->post('/apologies',$this->apologyData());
 
         $this->patch('/apologies/'.Apology::first()->id , [
             'student_id'=>2,
@@ -55,15 +42,7 @@ class ApologyManagementTest extends TestCase
     /** @test */
     public function an_apology_can_be_deleted()
     {
-        //$this->withoutExceptionHandling();
-
-        $this->post('/apologies',[
-            'student_id'=>1,
-            'valid_from'=>'12.08.2020.',
-            'valid_to'=>'12.09.2020.',
-            'nof_weeks'=>'4',
-            'comment'=>'abc',
-        ]);
+        $this->post('/apologies',$this->apologyData());
 
         $apology = Apology::first();
         $response = $this->delete($apology->path());
@@ -71,5 +50,19 @@ class ApologyManagementTest extends TestCase
         $this->assertCount(0,Apology::all());
 
         $response->assertRedirect('/apologies');
+    }
+
+    /**
+     * @return array
+     */
+    private function apologyData(): array
+    {
+        return [
+            'student_id' => '1',
+            'valid_from' => '12.08.2020.',
+            'valid_to' => '12.09.2020.',
+            'nof_weeks' => '4',
+            'comment' => 'abc',
+        ];
     }
 }

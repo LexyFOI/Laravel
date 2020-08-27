@@ -9,38 +9,32 @@ class HoursHeldController extends Controller
 {
     public function store()
     {
-        $data = request()->validate([
-            'hs_date'=>'required',
-            'hs_day'=>'required',
-            'group_id'=>'required',
-            'student_id'=>'required',
-            'points'=>'required',
-        ]);
-
-        HourHeld::create($data);
-
+        HourHeld::create($this->validateRequest());
     }
 
     public function update(HourHeld $hour)
     {
-        $data = request()->validate([
-            'hs_date'=>'required',
-            'hs_day'=>'required',
-            'group_id'=>'required',
-            'student_id'=>'required',
-            'points'=>'required',
-        ]);
-
-        $hour->update($data);
-
+        $hour->update($this->validateRequest());
         return redirect($hour->path());
     }
 
     public function destroy(HourHeld $hour)
     {
         $hour->delete();
-
         return redirect('/hours');
     }
 
+    /**
+     * @return array
+     */
+    private function validateRequest(): array
+    {
+        return request()->validate([
+            'hs_date' => 'required',
+            'hs_day' => 'required',
+            'group_id' => 'required',
+            'student_id' => 'required',
+            'points' => 'required',
+        ]);
+    }
 }

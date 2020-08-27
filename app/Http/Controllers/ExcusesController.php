@@ -14,20 +14,13 @@ class ExcusesController extends Controller
 
     public function update(Excuse $excuse)
     {
-        $data = request()->validate([
-            'excuse_id'=>'required',
-            'description'=>'required',
-        ]);
-
-        $excuse->update($data);
-
+        $excuse->update($this->validateRequest());
         return redirect($excuse->path());
     }
 
     public function destroy(Excuse $excuse)
     {
         $excuse->delete();
-
         return redirect('/excuses');
     }
 

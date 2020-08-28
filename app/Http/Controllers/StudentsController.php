@@ -42,7 +42,7 @@ class StudentsController extends Controller
             'excuse_id' => 'required',
             'group_id' => 'required',
             'no_excused_weekends' => 'required',
-            'no_workd_hours' => 'required',
+            'no_worked_hours' => 'required',
             'comment' => 'required',
         ]);
     }

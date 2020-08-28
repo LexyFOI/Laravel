@@ -24,7 +24,7 @@ class CreateStudentsTable extends Migration
             $table->integer('excuse_id');
             $table->integer('group_id');
             $table->integer('no_excused_weekends');
-            $table->integer('no_workd_hours');
+            $table->integer('no_worked_hours');
             $table->string('comment');
             $table->timestamps();
         });

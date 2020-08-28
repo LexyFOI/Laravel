@@ -4,7 +4,6 @@ namespace Tests\Feature;
 
 use App\Student;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 
 class StudentManagementTest extends TestCase
@@ -38,7 +37,7 @@ class StudentManagementTest extends TestCase
                 'excuse_id'=>'1',
                 'group_id'=>1,
                 'no_excused_weekends'=>1,
-                'no_workd_hours'=>1,
+                'no_worked_hours'=>1,
                 'comment'=>'asd',
             ]);
 
@@ -51,7 +50,7 @@ class StudentManagementTest extends TestCase
         $this->assertEquals('1', Student::first()->excuse_id);
         $this->assertEquals('1', Student::first()->group_id);
         $this->assertEquals('1', Student::first()->no_excused_weekends);
-        $this->assertEquals('1', Student::first()->no_workd_hours);
+        $this->assertEquals('1', Student::first()->no_worked_hours);
         $this->assertEquals('asd', Student::first()->comment);
     }
 
@@ -84,7 +83,7 @@ class StudentManagementTest extends TestCase
             'excuse_id' => '0',
             'group_id' => 1,
             'no_excused_weekends' => 0,
-            'no_workd_hours' => 0,
+            'no_worked_hours' => 0,
             'comment' => 'blabla',
         ];
     }

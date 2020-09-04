@@ -37,7 +37,6 @@ class HoursHeldManagementTest extends TestCase
         $this->assertEquals('utorak', HourHeld::first()->hs_day);
         $this->assertEquals('2', HourHeld::first()->group_id);
         $this->assertEquals('2', HourHeld::first()->student_id);
-        //$this->assertEquals('3', HourHeld::first()->points);
     }
 
     /** @test */
@@ -65,7 +64,6 @@ class HoursHeldManagementTest extends TestCase
             'hs_day' => 'srijeda',
             'group_id' => 1,
             'student_id' => 1,
-            //'points' => '1.5',
         ];
     }
 }

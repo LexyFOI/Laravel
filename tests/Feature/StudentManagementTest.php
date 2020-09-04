@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-use App\Excuse;
 use App\Student;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -19,7 +18,6 @@ class StudentManagementTest extends TestCase
         $this->assertCount(1,Student::all());
 
         $response->assertRedirect('/students/'.Student::first()->id);
-
     }
 
     /**  @test */
@@ -70,10 +68,7 @@ class StudentManagementTest extends TestCase
         if($student_excuse == 1){
             echo "Potrebno je dodati ispričnicu u bazu!!";
         }
-
-
-
-    } */
+   } */
 
     /**
      * @return array

@@ -19,7 +19,6 @@ class CreateHourHeldsTable extends Migration
             $table->string('hs_day');
             $table->integer('group_id');
             $table->integer('student_id');
-            //$table->decimal('points');
             $table->timestamps();
         });
     }

@@ -3,7 +3,6 @@
 namespace Tests\Feature;
 
 use App\Event;
-use App\Excuse;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 

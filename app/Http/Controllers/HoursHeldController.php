@@ -34,7 +34,7 @@ class HoursHeldController extends Controller
             'hs_day' => 'required',
             'group_id' => 'required',
             'student_id' => 'required',
-            'points' => 'required',
+            //'points' => 'required',
         ]);
     }
 }

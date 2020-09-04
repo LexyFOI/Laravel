@@ -15,10 +15,14 @@ class CreateEventsTable extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->id();
-            $table->string('group');
-            $table->time('startTime');
-            $table->time('endTime');
-            $table->string('location');
+            //$table->string('group');
+            $table->string('event_name');
+            $table->date('startDate');
+            $table->date('endDate');
+            $table->boolean('payment');
+            $table->integer('price');
+            $table->integer('event_points');
+            $table->string('event_description');
             $table->timestamps();
         });
     }

@@ -37,13 +37,13 @@ class StudentsController extends Controller
             'student_name' => 'required',
             'student_last_name' => 'required',
             'email' => 'required',
-            'year' => 'required',
+            //'year' => 'required',
             'course_id' => 'required',
-            'excuse_id' => 'required',
-            'group_id' => 'required',
-            'no_excused_weekends' => 'required',
-            'no_worked_hours' => 'required',
-            'comment' => 'required',
+            //'excuse_id' => 'required',
+            //'group_id' => 'required',
+            //'no_excused_weekends' => 'required',
+            //'no_worked_hours' => 'required',
+            //'comment' => 'required',
         ]);
     }
 }

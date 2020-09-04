@@ -16,7 +16,11 @@ class CreateGroupsTable extends Migration
         Schema::create('groups', function (Blueprint $table) {
             $table->id();
             $table->string('group_name');
-            $table->integer('points');
+            $table->integer('location_id');
+            $table->time('startTime');
+            $table->time('endTime');
+            $table->integer('group_points');
+            $table->string('organizer');
             $table->timestamps();
         });
     }

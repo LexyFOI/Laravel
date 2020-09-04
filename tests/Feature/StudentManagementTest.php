@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Excuse;
 use App\Student;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -32,26 +33,14 @@ class StudentManagementTest extends TestCase
                 'student_name'=>'Maja',
                 'student_last_name'=>'Borošić',
                 'email'=>'mborosic@foi.hr',
-                'year'=>'2',
-                'course_id'=>'PITUP',
-                'excuse_id'=>'1',
-                'group_id'=>1,
-                'no_excused_weekends'=>1,
-                'no_worked_hours'=>1,
-                'comment'=>'asd',
+                'course_id'=>'1',
             ]);
 
         $this->assertEquals('21365487902', Student::first()->oib);
         $this->assertEquals('Maja', Student::first()->student_name);
         $this->assertEquals('Borošić', Student::first()->student_last_name);
         $this->assertEquals('mborosic@foi.hr',Student::first()->email);
-        $this->assertEquals('2', Student::first()->year);
-        $this->assertEquals('PITUP', Student::first()->course_id);
-        $this->assertEquals('1', Student::first()->excuse_id);
-        $this->assertEquals('1', Student::first()->group_id);
-        $this->assertEquals('1', Student::first()->no_excused_weekends);
-        $this->assertEquals('1', Student::first()->no_worked_hours);
-        $this->assertEquals('asd', Student::first()->comment);
+        $this->assertEquals('1', Student::first()->course_id);
     }
 
     /** @test */
@@ -65,8 +54,26 @@ class StudentManagementTest extends TestCase
 
         $this->assertCount(0,Student::all());
         $response->assertRedirect('/students');
-
     }
+
+    //a student can be enrolled in to a group of held hour
+
+    //upisom u atribut 'excuse_id' vrijednosti koja odgovara liječničkoj ispričnici
+    // skaće izrada ispričnice (Apology) te se moraju upisati podaci
+    /** @test */
+   /** public function check_if_an_apology_needs_to_be_added()
+    {
+        $this->post('/students', $this->studentData());
+
+        $student_excuse = Student::first()->excuse_id;
+
+        if($student_excuse == 1){
+            echo "Potrebno je dodati ispričnicu u bazu!!";
+        }
+
+
+
+    } */
 
     /**
      * @return array
@@ -78,13 +85,7 @@ class StudentManagementTest extends TestCase
             'student_name' => 'Aleksandra',
             'student_last_name' => 'Tomić',
             'email' => 'apolak@foi.hr',
-            'year' => '2',
-            'course_id' => 'BPBZ',
-            'excuse_id' => '0',
-            'group_id' => 1,
-            'no_excused_weekends' => 0,
-            'no_worked_hours' => 0,
-            'comment' => 'blabla',
+            'course_id' => '2',
         ];
     }
 }

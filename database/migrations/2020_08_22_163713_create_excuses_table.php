@@ -15,8 +15,8 @@ class CreateExcusesTable extends Migration
     {
         Schema::create('excuses', function (Blueprint $table) {
             $table->id();
-            $table->string('excuse_id');
-            $table->string('description');
+            $table->integer('excuse_id');
+            $table->string('excuse_name');
             $table->timestamps();
         });
     }

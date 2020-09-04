@@ -12,7 +12,7 @@ class HoursHeldManagementTest extends TestCase
     use RefreshDatabase;
 
     /** @test */
-    public function an_hourheld_can_be_added()
+    public function an_hour_held_can_be_added()
     {
         $this->post('/hours', $this->hhData());
 
@@ -20,7 +20,7 @@ class HoursHeldManagementTest extends TestCase
     }
 
     /** @test */
-    public function an_hourheld_can_be_updated()
+    public function an_hour_held_can_be_updated()
     {
         $this->post('/hours', $this->hhData());
 
@@ -30,14 +30,14 @@ class HoursHeldManagementTest extends TestCase
             'hs_day'=>'utorak',
             'group_id'=>2,
             'student_id'=>2,
-            'points'=>'3.0',
+            //'points'=>'3.0',
         ]);
 
         $this->assertEquals('11.08.2020.', HourHeld::first()->hs_date);
         $this->assertEquals('utorak', HourHeld::first()->hs_day);
         $this->assertEquals('2', HourHeld::first()->group_id);
         $this->assertEquals('2', HourHeld::first()->student_id);
-        $this->assertEquals('3', HourHeld::first()->points);
+        //$this->assertEquals('3', HourHeld::first()->points);
     }
 
     /** @test */
@@ -53,6 +53,8 @@ class HoursHeldManagementTest extends TestCase
         $response->assertRedirect('/hours');
     }
 
+    ///samo registrirani korisnik može upisati studente na sat
+
     /**
      * @return array
      */
@@ -63,7 +65,7 @@ class HoursHeldManagementTest extends TestCase
             'hs_day' => 'srijeda',
             'group_id' => 1,
             'student_id' => 1,
-            'points' => '1.5',
+            //'points' => '1.5',
         ];
     }
 }

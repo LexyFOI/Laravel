@@ -27,8 +27,8 @@ class ExcuseManagementTest extends TestCase
     /** @test */
     public function a_description_is_required()
     {
-        $response = $this->post('/excuses', array_merge($this->excuseData(), ['description'=>'']));
-        $response->assertSessionHasErrors('description');
+        $response = $this->post('/excuses', array_merge($this->excuseData(), ['excuse_name'=>'']));
+        $response->assertSessionHasErrors('excuse_name');
     }
 
     /** @test */
@@ -38,12 +38,12 @@ class ExcuseManagementTest extends TestCase
 
         $excuse = Excuse::first();
         $response = $this->patch('/excuses/'.$excuse->id,[
-            'excuse_id'=>'B',
-            'description'=>'liječnička',
+            'excuse_id'=>'4',
+            'excuse_name'=>'liječnička',
         ]);
 
-        $this->assertEquals('liječnička', Excuse::first()->description);
-        $this->assertEquals('B', Excuse::first()->excuse_id);
+        $this->assertEquals('liječnička', Excuse::first()->excuse_name);
+        $this->assertEquals('4', Excuse::first()->excuse_id);
     }
 
     /** @test */
@@ -66,8 +66,8 @@ class ExcuseManagementTest extends TestCase
     private function excuseData(): array
     {
         return [
-            'excuse_id' => 'C',
-            'description' => 'sportaš',
+            'excuse_id' => 0,
+            'excuse_name' => 'nema',
         ];
     }
 }

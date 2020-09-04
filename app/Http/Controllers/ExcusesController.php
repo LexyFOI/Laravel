@@ -28,7 +28,7 @@ class ExcusesController extends Controller
     {
         return request()->validate([
             'excuse_id' => 'required',
-            'description' => 'required',
+            'excuse_name' => 'required',
         ]);
     }
 }

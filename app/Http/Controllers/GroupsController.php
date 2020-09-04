@@ -31,7 +31,11 @@ class GroupsController extends Controller
     {
         return request()->validate([
             'group_name' => 'required',
-            'points' => 'required',
+            'location_id'=>'',
+            'startTime'=>'',
+            'endTime'=>'',
+            'group_points' => 'required',
+            'organizer'=>'',
         ]);
     }
 

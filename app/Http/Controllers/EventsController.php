@@ -30,10 +30,13 @@ class EventsController extends Controller
     private function validateRequest()
     {
         return request()->validate([
-            'group' => 'required',
-            'startTime' => 'required',
-            'endTime' => 'required',
-            'location' => 'required',
+            'event_name' => 'required',
+            'startDate' => 'required',
+            'endDate' => 'required',
+            'payment' => 'required',
+            'price'=> 'required',
+            'event_points'=>'required',
+            'event_description'=>'required',
         ]);
     }
 }

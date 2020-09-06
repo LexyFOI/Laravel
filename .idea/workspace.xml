@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b28ec3de-8ed6-488a-a509-d5af90ea239b" name="Default Changelist" comment="Korekcije i novi testovi &#10;- dodani testovi za klase (akademska godina, studij, lokacija -&gt; kreiranje, ažuriranje, brisanje)&#10;- korigirani testovi sukladno izmjenama na UML diagramu klasa (promjene na testovima za događaje, opravdanja, grupe, održane sate i studente)">
+    <list default="true" id="b28ec3de-8ed6-488a-a509-d5af90ea239b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/TZKevidencija.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TZKevidencija.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HoursHeldController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HoursHeldController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_23_113301_create_students_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_23_113301_create_students_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_08_23_182305_create_hour_helds_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_08_23_182305_create_hour_helds_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/AcademicYearManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/AcademicYearManagementTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ApologyManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ApologyManagementTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/CourseManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/CourseManagementTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExcuseManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExcuseManagementTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/GroupManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/GroupManagementTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/HoursHeldManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/HoursHeldManagementTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/LocationManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/LocationManagementTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/StudentManagementTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +43,62 @@
     </favorites_list>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Unit/StudentEnrollmentsTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-129">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="e#30#44#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/Feature/StudentEnrolledTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+              <folding>
+                <element signature="e#33#47#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="372">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentEnrolledController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+              <folding>
+                <element signature="e#40#56#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -91,9 +143,6 @@
         <option value="$PROJECT_DIR$/database/factories/LocationFactory.php" />
         <option value="$PROJECT_DIR$/tests/Unit/StudentEnrollmentsTest.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/tests/Feature/StudentEnrolledTest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/StudentEnrolledController.php" />
-        <option value="$PROJECT_DIR$/app/Student.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_31_164357_create_locations_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_31_110815_create_a_years_table.php" />
         <option value="$PROJECT_DIR$/database/migrations/2020_08_21_193328_create_groups_table.php" />
@@ -113,6 +162,9 @@
         <option value="$PROJECT_DIR$/tests/Feature/AcademicYearManagementTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/ExcuseManagementTest.php" />
         <option value="$PROJECT_DIR$/tests/Feature/EventManagementTest.php" />
+        <option value="$PROJECT_DIR$/app/Student.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/StudentEnrolledController.php" />
+        <option value="$PROJECT_DIR$/tests/Feature/StudentEnrolledTest.php" />
       </list>
     </option>
   </component>
@@ -219,11 +271,11 @@
       <path value="$PROJECT_DIR$/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
       <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -239,6 +291,24 @@
             <path>
               <item name="TZKevidencija" type="b2602c69:ProjectViewProjectNode" />
               <item name="TZKevidencija" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TZKevidencija" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TZKevidencija" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TZKevidencija" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TZKevidencija" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="TZKevidencija" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TZKevidencija" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="TZKevidencija" type="b2602c69:ProjectViewProjectNode" />
@@ -299,16 +369,16 @@
       <TestRunner class="Tests\Feature\StudentEnrolledTest" file="$PROJECT_DIR$/tests/Feature/StudentEnrolledTest.php" method="a_student_can_be_enrolled_in_the_group" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="StudentEnrolledTest.only_signed_in_user_can_enrolled_a_student" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Tests\Feature\StudentEnrolledTest" file="$PROJECT_DIR$/tests/Feature/StudentEnrolledTest.php" method="only_signed_in_user_can_enrolled_a_student" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="StudentEnrollmentsTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\StudentEnrollmentsTest" file="$PROJECT_DIR$/tests/Unit/StudentEnrollmentsTest.php" scope="Class" />
       <method v="2" />
     </configuration>
     <configuration name="StudentEnrollmentsTest.a_student_can_be_enrolled" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Tests\Unit\StudentEnrollmentsTest" file="$PROJECT_DIR$/tests/Unit/StudentEnrollmentsTest.php" method="a_student_can_be_enrolled" scope="Method" />
-      <method v="2" />
-    </configuration>
-    <configuration name="StudentEnrollmentsTest.a_student_cant_be_enrolled_more_then_once_per_day_at_the_same_group" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Tests\Unit\StudentEnrollmentsTest" file="$PROJECT_DIR$/tests/Unit/StudentEnrollmentsTest.php" method="a_student_cant_be_enrolled_more_then_once_per_day_at_the_same_group" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -322,10 +392,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.tests" />
+        <item itemvalue="PHPUnit.StudentEnrolledTest.only_signed_in_user_can_enrolled_a_student" />
         <item itemvalue="PHPUnit.StudentEnrollmentsTest.a_student_can_be_enrolled" />
         <item itemvalue="PHPUnit.StudentEnrolledTest.a_student_can_be_enrolled_in_the_group" />
         <item itemvalue="PHPUnit.StudentEnrollmentsTest" />
-        <item itemvalue="PHPUnit.StudentEnrollmentsTest.a_student_cant_be_enrolled_more_then_once_per_day_at_the_same_group" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +424,7 @@
       <workItem from="1598978765942" duration="7333000" />
       <workItem from="1599042304991" duration="4433000" />
       <workItem from="1599170303440" duration="2718000" />
-      <workItem from="1599215102645" duration="4472000" />
+      <workItem from="1599215102645" duration="9885000" />
     </task>
     <task id="LOCAL-00001" summary="dodana funkcija path() u događaje(Event)">
       <created>1598097423060</created>
@@ -489,43 +559,50 @@
       <option name="project" value="LOCAL" />
       <updated>1599252256545</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="uklonjeni nepotrebni zakomentirani i nekorišteni dijelovi koda">
+      <created>1599252970729</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1599252970729</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests - 2020.09.02 at 13h 25m 05s.xml">
-      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="tests - 2020.09.02 at 13h 41m 45s.xml">
-      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="tests - 2020.09.02 at 13h 42m 56s.xml">
-      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="tests - 2020.09.04 at 22h 31m 22s.xml">
-      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="tests - 2020.09.04 at 22h 34m 09s.xml">
-      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="tests - 2020.09.04 at 22h 34m 27s.xml">
-      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="tests - 2020.09.04 at 22h 36m 00s.xml">
-      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="tests - 2020.09.04 at 22h 37m 20s.xml">
-      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="tests - 2020.09.04 at 22h 53m 53s.xml">
-      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="tests - 2020.09.04 at 22h 54m 07s.xml">
+      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StudentEnrolledTest_only_signed_in_user_can_enrolled_a_student - 2020.09.06 at 13h 34m 34s.xml">
+      <configuration name="StudentEnrolledTest.only_signed_in_user_can_enrolled_a_student" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StudentEnrolledTest_only_signed_in_user_can_enrolled_a_student - 2020.09.06 at 13h 35m 18s.xml">
+      <configuration name="StudentEnrolledTest.only_signed_in_user_can_enrolled_a_student" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StudentEnrolledTest_only_signed_in_user_can_enrolled_a_student - 2020.09.06 at 13h 52m 25s.xml">
+      <configuration name="StudentEnrolledTest.only_signed_in_user_can_enrolled_a_student" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StudentEnrolledTest_only_signed_in_user_can_enrolled_a_student - 2020.09.06 at 13h 54m 08s.xml">
+      <configuration name="StudentEnrolledTest.only_signed_in_user_can_enrolled_a_student" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StudentEnrolledTest_only_signed_in_user_can_enrolled_a_student - 2020.09.06 at 13h 54m 36s.xml">
+      <configuration name="StudentEnrolledTest.only_signed_in_user_can_enrolled_a_student" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StudentEnrolledTest_only_signed_in_user_can_enrolled_a_student - 2020.09.06 at 13h 55m 18s.xml">
+      <configuration name="StudentEnrolledTest.only_signed_in_user_can_enrolled_a_student" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="StudentEnrolledTest_only_signed_in_user_can_enrolled_a_student - 2020.09.06 at 14h 15m 16s.xml">
+      <configuration name="StudentEnrolledTest.only_signed_in_user_can_enrolled_a_student" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests - 2020.09.06 at 14h 15m 39s.xml">
+      <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="tests - 2020.09.06 at 14h 26m 10s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172975000" />
+    <option name="totallyTimeSpent" value="178388000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -537,15 +614,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.16684435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49755302" visible="true" weight="0.34245077" />
       <window_info id="Structure" order="1" sideWeight="0.5008157" side_tool="true" weight="0.2489339" />
       <window_info id="npm" order="2" sideWeight="0.5008157" side_tool="true" weight="0.2489339" />
       <window_info id="Favorites" order="3" sideWeight="0.502447" side_tool="true" weight="0.2489339" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32827735" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31744313" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31728664" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -554,7 +631,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32932165" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" weight="0.3249453" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32713348" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.32713348" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -646,7 +723,8 @@
     <MESSAGE value=".." />
     <MESSAGE value="tipfeler u nazivu atributa" />
     <MESSAGE value="Korekcije i novi testovi &#10;- dodani testovi za klase (akademska godina, studij, lokacija -&gt; kreiranje, ažuriranje, brisanje)&#10;- korigirani testovi sukladno izmjenama na UML diagramu klasa (promjene na testovima za događaje, opravdanja, grupe, održane sate i studente)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Korekcije i novi testovi &#10;- dodani testovi za klase (akademska godina, studij, lokacija -&gt; kreiranje, ažuriranje, brisanje)&#10;- korigirani testovi sukladno izmjenama na UML diagramu klasa (promjene na testovima za događaje, opravdanja, grupe, održane sate i studente)" />
+    <MESSAGE value="uklonjeni nepotrebni zakomentirani i nekorišteni dijelovi koda" />
+    <option name="LAST_COMMIT_MESSAGE" value="uklonjeni nepotrebni zakomentirani i nekorišteni dijelovi koda" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentsController.php">
@@ -717,23 +795,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentEnrolledController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
-          <folding>
-            <element signature="e#40#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/HourHeld.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -741,37 +802,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Unit/StudentEnrollmentsTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#30#44#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Event.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Feature/StudentEnrolledTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#33#47#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1055,6 +1089,50 @@
             <element signature="e#1261#1461#0#PHP" />
             <element signature="e#1484#1678#0#PHP" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Unit/StudentEnrollmentsTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-129">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#30#44#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Feature/StudentEnrolledTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
+          <folding>
+            <element signature="e#33#47#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StudentEnrolledController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <element signature="e#40#56#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>

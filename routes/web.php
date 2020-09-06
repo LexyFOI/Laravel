@@ -51,3 +51,6 @@ Route::post('/enrolled/{student}', 'StudentEnrolledController@store');
 Route::post('apologies', 'ApologiesControlller@store');
 Route::patch('apologies/{apology}', 'ApologiesControlller@update');
 Route::delete('apologies/{apology}', 'ApologiesControlller@destroy');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
